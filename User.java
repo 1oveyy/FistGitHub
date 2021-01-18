@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class User {
     private String name;
-    //@JsonIgnore()
+    @JsonIgnore()
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String email;
 
